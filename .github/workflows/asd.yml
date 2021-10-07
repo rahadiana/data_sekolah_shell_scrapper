@@ -13,7 +13,6 @@ jobs:
       - uses: actions/checkout@v1
       - name: scrape run
         run: | 
-          sudo apt update
           sudo apt install libxml2-utils -y
           sudo apt install jq -y
           sudo apt install wget -y
