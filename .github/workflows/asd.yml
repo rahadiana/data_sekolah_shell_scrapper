@@ -14,8 +14,9 @@ jobs:
       - name: scrape run
         run: | 
           sudo apt update
-          sudo apt install libxml2-utils
-          sudo apt install jq
+          sudo apt install libxml2-utils -y
+          sudo apt install jq -y
+          sudo apt install wget -y
           sudo timeout 120 sh scrape.sh
       - name: Commit
         run: |
