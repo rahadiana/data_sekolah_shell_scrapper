@@ -14,6 +14,8 @@ jobs:
       - name: scrape run
         run: | 
           mkdir -p cache/tmp/
+          touch cache/tmp/aa.txt
+          echo "sad" > cache/tmp/aa.txt
       - name: Commit
         run: |
           git config --local user.name "github-actions[bot]"
