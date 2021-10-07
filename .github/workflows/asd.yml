@@ -15,7 +15,7 @@ jobs:
         run: | 
           sudo mkdir -p cache/tmp/
           sudo touch cache/tmp/aa.txt
-          sudo cho "sad" > cache/tmp/aa.txt
+          sudo echo "sad" > cache/tmp/aa.txt
       - name: Commit
         run: |
           git config --local user.name "github-actions[bot]"
