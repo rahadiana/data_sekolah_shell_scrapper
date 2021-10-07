@@ -13,9 +13,9 @@ jobs:
       - uses: actions/checkout@v1
       - name: scrape run
         run: | 
-          mkdir -p cache/tmp/
-          touch cache/tmp/aa.txt
-          echo "sad" > cache/tmp/aa.txt
+          sudo mkdir -p cache/tmp/
+          sudo touch cache/tmp/aa.txt
+          sudo cho "sad" > cache/tmp/aa.txt
       - name: Commit
         run: |
           git config --local user.name "github-actions[bot]"
