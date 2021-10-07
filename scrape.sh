@@ -1,7 +1,4 @@
 
-startup()
-{
-
 
 echo "startup start"
 mkdir -p data_sekolah
@@ -12,9 +9,7 @@ mkdir -p data_sekolah/all/province/$bbb
 mkdir -p data_sekolah/all/city/$bbb
 mkdir -p data_sekolah/all/region/$bbb
 echo "startup end"
-clear
 
-bbb=$(cat /tmp/smstrnow.txt )
 echo "startup start"
 sudo mkdir -p data_sekolah
 sudo mkdir -p cache/tmp/
@@ -25,8 +20,6 @@ sudo mkdir -p data_sekolah/all/province/$bbb
 sudo mkdir -p data_sekolah/all/city/$bbb
 sudo mkdir -p data_sekolah/all/region/$bbb
 echo "startup end"
-clear
-}
-startup
+
 echo "finishs"
 exit 1
