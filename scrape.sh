@@ -56,4 +56,3 @@ aabbcc
 #FindCity
 #FindDetail
 #echo "finish"
-exit 1
