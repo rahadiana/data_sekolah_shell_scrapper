@@ -38,6 +38,7 @@ echo "findCity end"
 }
 
 FindDetail(){
+bbb=$(cat cache/tmp/smstrnow.txt )
 echo "findDetail start"
 find data_sekolah/city/$bbb -name '*.json' -exec cat {} \; | jq '.' > data_sekolah/all/city/$bbb/$bbb.json
 cat data_sekolah/all/city/$bbb/$bbb.json | jq -r '.[].kode_wilayah' | sed 's/ //g' > cache/tmp/allkota.txt
