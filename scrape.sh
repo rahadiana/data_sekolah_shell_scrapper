@@ -3,6 +3,7 @@ startup()
 {
 echo "startup start"
 mkdir -p data_sekolah
+mkdir -p cache/tmp/
 wget  -q "https://dapo.kemdikbud.go.id/sp" -O cache/tmp/ tiktok.txt 
 xmllint --noout --html -xpath '//*[@id="selectSemester"]/option[1]/@value'  2>/dev/null cache/tmp/ tiktok.txt | sed -e "s/ //; s/value=\"//; s/\"//;" > cache/tmp/ smstrnow.txt
 bbb=$(cat cache/tmp/ smstrnow.txt )
