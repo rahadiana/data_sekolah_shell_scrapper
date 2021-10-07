@@ -25,7 +25,7 @@ mkdir -p cache/tmp/data_sekolah
 rm cache/tmp/data_sekolah/*.json
 ls data_sekolah/province/$bbb/ | sed "s/^/cp data_sekolah\/province\/$bbb\//; s/$/\/*.json  cache\/tmp\/data_sekolah\//"  | bash
 cat cache/tmp/data_sekolah/*.json | jq -s 'flatten' > cache/tmp/fin.json
-echo "abc end"
+echo "abc ends"
 clear
 }
 
