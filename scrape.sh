@@ -42,9 +42,7 @@ find data_sekolah/city/$bbb -name '*.json' -exec cat {} \; | jq '.' > data_sekol
 cat data_sekolah/all/city/$bbb/$bbb.json | jq -r '.[].kode_wilayah' | sed 's/ //g' > cache/tmp/allkota.txt
 cat cache/tmp/allkota.txt | sed "s/^/mkdir -p data_sekolah\/region\/$bbb\//g" | bash
 cat cache/tmp/allkota.txt | sed "s/^/timeout 10 wget -q -nc 'https:\/\/dapo.kemdikbud.go.id\/rekap\/progresSP?id_level_wilayah=3\&kode_wilayah=/; s/$/\&smester_id=$bbb\&bentuk_pendidikan_id=' -O data_sekolah\/region\/$bbb/" > cache/tmp/data_sekolah/region.txt
-paste -d "|" cache/tmp/data_sekolah/region.txt cache/tmp/allkota.txt cache/tmp/allkota.txt  | sed 's/$/.json \&/'  | sed 's/|/\//g;'  | sed -e '0~150 s/$/\nwait/g;' > cache/tmp/detailsekolah.txt 
-echo "exit 1" >> cache/tmp/detailsekolah.txt
-timeout 120 cat cache/tmp/detailsekolah.txt | bash
+timeout 120 paste -d "|" cache/tmp/data_sekolah/region.txt cache/tmp/allkota.txt cache/tmp/allkota.txt  | sed 's/$/.json \&/'  | sed 's/|/\//g;'  | sed -e '0~150 s/$/\nwait/g;' | bash
 echo "findDetail end"
 }
 #cat data_sekolah/all/city/$bbb/$bbb.json | jq '[try .[] | { nama_kabkot: .nama, kode_wilayah: .kode_wilayah, id_level_wilayah: .id_level_wilayah, mst_kode_wilayah: .mst_kode_wilayah, induk_provinsi: .induk_provinsi, kode_wilayah_induk_provinsi: .kode_wilayah_induk_provinsi, induk_kabupaten: .induk_kabupaten, kode_wilayah_induk_kabupaten: .kode_wilayah_induk_kabupaten }]'| jq -s 'flatten' | sed -e 's/  "/"/g;' | jq -s 'flatten' > tes.txt
