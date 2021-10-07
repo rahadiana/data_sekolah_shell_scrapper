@@ -221,6 +221,7 @@ timeout 10 wget -q -nc 'https://dapo.kemdikbud.go.id/rekap/progresSP?id_level_wi
 timeout 10 wget -q -nc 'https://dapo.kemdikbud.go.id/rekap/progresSP?id_level_wilayah=3&kode_wilayah=121338&smester_id=20211&bentuk_pendidikan_id=' -O data_sekolah/region/20211
 timeout 10 wget -q -nc 'https://dapo.kemdikbud.go.id/rekap/progresSP?id_level_wilayah=3&kode_wilayah=121340&smester_id=20211&bentuk_pendidikan_id=' -O data_sekolah/region/20211
 timeout 10 wget -q -nc 'https://dapo.kemdikbud.go.id/rekap/progresSP?id_level_wilayah=3&kode_wilayah=121339&smester_id=20211&bentuk_pendidikan_id=' -O data_sekolah/region/20211
+timeout 10 wget -q -nc 'https://dapo.kemdikbud.go.id/rekap/progresSP?id_level_wilayah=3&kode_wilayah=351301&smester_id=20211&bentuk_pendidikan_id=' -O data_sekolah/region/20211
 timeout 10 wget -q -nc 'https://dapo.kemdikbud.go.id/rekap/progresSP?id_level_wilayah=3&kode_wilayah=200116&smester_id=20211&bentuk_pendidikan_id=' -O data_sekolah/region/20211
 timeout 10 wget -q -nc 'https://dapo.kemdikbud.go.id/rekap/progresSP?id_level_wilayah=3&kode_wilayah=200125&smester_id=20211&bentuk_pendidikan_id=' -O data_sekolah/region/20211
 timeout 10 wget -q -nc 'https://dapo.kemdikbud.go.id/rekap/progresSP?id_level_wilayah=3&kode_wilayah=200115&smester_id=20211&bentuk_pendidikan_id=' -O data_sekolah/region/20211
@@ -368,6 +369,7 @@ timeout 10 wget -q -nc 'https://dapo.kemdikbud.go.id/rekap/progresSP?id_level_wi
 timeout 10 wget -q -nc 'https://dapo.kemdikbud.go.id/rekap/progresSP?id_level_wilayah=3&kode_wilayah=266003&smester_id=20211&bentuk_pendidikan_id=' -O data_sekolah/region/20211
 timeout 10 wget -q -nc 'https://dapo.kemdikbud.go.id/rekap/progresSP?id_level_wilayah=3&kode_wilayah=266007&smester_id=20211&bentuk_pendidikan_id=' -O data_sekolah/region/20211
 timeout 10 wget -q -nc 'https://dapo.kemdikbud.go.id/rekap/progresSP?id_level_wilayah=3&kode_wilayah=266008&smester_id=20211&bentuk_pendidikan_id=' -O data_sekolah/region/20211
+timeout 10 wget -q -nc 'https://dapo.kemdikbud.go.id/rekap/progresSP?id_level_wilayah=3&kode_wilayah=351501&smester_id=20211&bentuk_pendidikan_id=' -O data_sekolah/region/20211
 timeout 10 wget -q -nc 'https://dapo.kemdikbud.go.id/rekap/progresSP?id_level_wilayah=3&kode_wilayah=090405&smester_id=20211&bentuk_pendidikan_id=' -O data_sekolah/region/20211
 timeout 10 wget -q -nc 'https://dapo.kemdikbud.go.id/rekap/progresSP?id_level_wilayah=3&kode_wilayah=090406&smester_id=20211&bentuk_pendidikan_id=' -O data_sekolah/region/20211
 timeout 10 wget -q -nc 'https://dapo.kemdikbud.go.id/rekap/progresSP?id_level_wilayah=3&kode_wilayah=090404&smester_id=20211&bentuk_pendidikan_id=' -O data_sekolah/region/20211
@@ -1332,6 +1334,7 @@ timeout 10 wget -q -nc 'https://dapo.kemdikbud.go.id/rekap/progresSP?id_level_wi
 timeout 10 wget -q -nc 'https://dapo.kemdikbud.go.id/rekap/progresSP?id_level_wilayah=3&kode_wilayah=240716&smester_id=20211&bentuk_pendidikan_id=' -O data_sekolah/region/20211
 timeout 10 wget -q -nc 'https://dapo.kemdikbud.go.id/rekap/progresSP?id_level_wilayah=3&kode_wilayah=240714&smester_id=20211&bentuk_pendidikan_id=' -O data_sekolah/region/20211
 timeout 10 wget -q -nc 'https://dapo.kemdikbud.go.id/rekap/progresSP?id_level_wilayah=3&kode_wilayah=240719&smester_id=20211&bentuk_pendidikan_id=' -O data_sekolah/region/20211
+timeout 10 wget -q -nc 'https://dapo.kemdikbud.go.id/rekap/progresSP?id_level_wilayah=3&kode_wilayah=351001&smester_id=20211&bentuk_pendidikan_id=' -O data_sekolah/region/20211
 timeout 10 wget -q -nc 'https://dapo.kemdikbud.go.id/rekap/progresSP?id_level_wilayah=3&kode_wilayah=186002&smester_id=20211&bentuk_pendidikan_id=' -O data_sekolah/region/20211
 timeout 10 wget -q -nc 'https://dapo.kemdikbud.go.id/rekap/progresSP?id_level_wilayah=3&kode_wilayah=186003&smester_id=20211&bentuk_pendidikan_id=' -O data_sekolah/region/20211
 timeout 10 wget -q -nc 'https://dapo.kemdikbud.go.id/rekap/progresSP?id_level_wilayah=3&kode_wilayah=186008&smester_id=20211&bentuk_pendidikan_id=' -O data_sekolah/region/20211
@@ -4267,6 +4270,9 @@ timeout 10 wget -q -nc 'https://dapo.kemdikbud.go.id/rekap/progresSP?id_level_wi
 timeout 10 wget -q -nc 'https://dapo.kemdikbud.go.id/rekap/progresSP?id_level_wilayah=3&kode_wilayah=192493&smester_id=20211&bentuk_pendidikan_id=' -O data_sekolah/region/20211
 timeout 10 wget -q -nc 'https://dapo.kemdikbud.go.id/rekap/progresSP?id_level_wilayah=3&kode_wilayah=192417&smester_id=20211&bentuk_pendidikan_id=' -O data_sekolah/region/20211
 timeout 10 wget -q -nc 'https://dapo.kemdikbud.go.id/rekap/progresSP?id_level_wilayah=3&kode_wilayah=192413&smester_id=20211&bentuk_pendidikan_id=' -O data_sekolah/region/20211
+timeout 10 wget -q -nc 'https://dapo.kemdikbud.go.id/rekap/progresSP?id_level_wilayah=3&kode_wilayah=350802&smester_id=20211&bentuk_pendidikan_id=' -O data_sekolah/region/20211
+timeout 10 wget -q -nc 'https://dapo.kemdikbud.go.id/rekap/progresSP?id_level_wilayah=3&kode_wilayah=350801&smester_id=20211&bentuk_pendidikan_id=' -O data_sekolah/region/20211
+timeout 10 wget -q -nc 'https://dapo.kemdikbud.go.id/rekap/progresSP?id_level_wilayah=3&kode_wilayah=350803&smester_id=20211&bentuk_pendidikan_id=' -O data_sekolah/region/20211
 timeout 10 wget -q -nc 'https://dapo.kemdikbud.go.id/rekap/progresSP?id_level_wilayah=3&kode_wilayah=031006&smester_id=20211&bentuk_pendidikan_id=' -O data_sekolah/region/20211
 timeout 10 wget -q -nc 'https://dapo.kemdikbud.go.id/rekap/progresSP?id_level_wilayah=3&kode_wilayah=031017&smester_id=20211&bentuk_pendidikan_id=' -O data_sekolah/region/20211
 timeout 10 wget -q -nc 'https://dapo.kemdikbud.go.id/rekap/progresSP?id_level_wilayah=3&kode_wilayah=031004&smester_id=20211&bentuk_pendidikan_id=' -O data_sekolah/region/20211
@@ -4820,6 +4826,8 @@ timeout 10 wget -q -nc 'https://dapo.kemdikbud.go.id/rekap/progresSP?id_level_wi
 timeout 10 wget -q -nc 'https://dapo.kemdikbud.go.id/rekap/progresSP?id_level_wilayah=3&kode_wilayah=096206&smester_id=20211&bentuk_pendidikan_id=' -O data_sekolah/region/20211
 timeout 10 wget -q -nc 'https://dapo.kemdikbud.go.id/rekap/progresSP?id_level_wilayah=3&kode_wilayah=096202&smester_id=20211&bentuk_pendidikan_id=' -O data_sekolah/region/20211
 timeout 10 wget -q -nc 'https://dapo.kemdikbud.go.id/rekap/progresSP?id_level_wilayah=3&kode_wilayah=096204&smester_id=20211&bentuk_pendidikan_id=' -O data_sekolah/region/20211
+timeout 10 wget -q -nc 'https://dapo.kemdikbud.go.id/rekap/progresSP?id_level_wilayah=3&kode_wilayah=351402&smester_id=20211&bentuk_pendidikan_id=' -O data_sekolah/region/20211
+timeout 10 wget -q -nc 'https://dapo.kemdikbud.go.id/rekap/progresSP?id_level_wilayah=3&kode_wilayah=351401&smester_id=20211&bentuk_pendidikan_id=' -O data_sekolah/region/20211
 timeout 10 wget -q -nc 'https://dapo.kemdikbud.go.id/rekap/progresSP?id_level_wilayah=3&kode_wilayah=040406&smester_id=20211&bentuk_pendidikan_id=' -O data_sekolah/region/20211
 timeout 10 wget -q -nc 'https://dapo.kemdikbud.go.id/rekap/progresSP?id_level_wilayah=3&kode_wilayah=040402&smester_id=20211&bentuk_pendidikan_id=' -O data_sekolah/region/20211
 timeout 10 wget -q -nc 'https://dapo.kemdikbud.go.id/rekap/progresSP?id_level_wilayah=3&kode_wilayah=040407&smester_id=20211&bentuk_pendidikan_id=' -O data_sekolah/region/20211
@@ -5243,6 +5251,7 @@ timeout 10 wget -q -nc 'https://dapo.kemdikbud.go.id/rekap/progresSP?id_level_wi
 timeout 10 wget -q -nc 'https://dapo.kemdikbud.go.id/rekap/progresSP?id_level_wilayah=3&kode_wilayah=251408&smester_id=20211&bentuk_pendidikan_id=' -O data_sekolah/region/20211
 timeout 10 wget -q -nc 'https://dapo.kemdikbud.go.id/rekap/progresSP?id_level_wilayah=3&kode_wilayah=251410&smester_id=20211&bentuk_pendidikan_id=' -O data_sekolah/region/20211
 timeout 10 wget -q -nc 'https://dapo.kemdikbud.go.id/rekap/progresSP?id_level_wilayah=3&kode_wilayah=251413&smester_id=20211&bentuk_pendidikan_id=' -O data_sekolah/region/20211
+timeout 10 wget -q -nc 'https://dapo.kemdikbud.go.id/rekap/progresSP?id_level_wilayah=3&kode_wilayah=351201&smester_id=20211&bentuk_pendidikan_id=' -O data_sekolah/region/20211
 timeout 10 wget -q -nc 'https://dapo.kemdikbud.go.id/rekap/progresSP?id_level_wilayah=3&kode_wilayah=051701&smester_id=20211&bentuk_pendidikan_id=' -O data_sekolah/region/20211
 timeout 10 wget -q -nc 'https://dapo.kemdikbud.go.id/rekap/progresSP?id_level_wilayah=3&kode_wilayah=051711&smester_id=20211&bentuk_pendidikan_id=' -O data_sekolah/region/20211
 timeout 10 wget -q -nc 'https://dapo.kemdikbud.go.id/rekap/progresSP?id_level_wilayah=3&kode_wilayah=051706&smester_id=20211&bentuk_pendidikan_id=' -O data_sekolah/region/20211
@@ -5869,6 +5878,7 @@ timeout 10 wget -q -nc 'https://dapo.kemdikbud.go.id/rekap/progresSP?id_level_wi
 timeout 10 wget -q -nc 'https://dapo.kemdikbud.go.id/rekap/progresSP?id_level_wilayah=3&kode_wilayah=032803&smester_id=20211&bentuk_pendidikan_id=' -O data_sekolah/region/20211
 timeout 10 wget -q -nc 'https://dapo.kemdikbud.go.id/rekap/progresSP?id_level_wilayah=3&kode_wilayah=032805&smester_id=20211&bentuk_pendidikan_id=' -O data_sekolah/region/20211
 timeout 10 wget -q -nc 'https://dapo.kemdikbud.go.id/rekap/progresSP?id_level_wilayah=3&kode_wilayah=032808&smester_id=20211&bentuk_pendidikan_id=' -O data_sekolah/region/20211
+timeout 10 wget -q -nc 'https://dapo.kemdikbud.go.id/rekap/progresSP?id_level_wilayah=3&kode_wilayah=350701&smester_id=20211&bentuk_pendidikan_id=' -O data_sekolah/region/20211
 timeout 10 wget -q -nc 'https://dapo.kemdikbud.go.id/rekap/progresSP?id_level_wilayah=3&kode_wilayah=220106&smester_id=20211&bentuk_pendidikan_id=' -O data_sekolah/region/20211
 timeout 10 wget -q -nc 'https://dapo.kemdikbud.go.id/rekap/progresSP?id_level_wilayah=3&kode_wilayah=220105&smester_id=20211&bentuk_pendidikan_id=' -O data_sekolah/region/20211
 timeout 10 wget -q -nc 'https://dapo.kemdikbud.go.id/rekap/progresSP?id_level_wilayah=3&kode_wilayah=220102&smester_id=20211&bentuk_pendidikan_id=' -O data_sekolah/region/20211
