@@ -17,7 +17,7 @@ jobs:
           sudo apt install libxml2-utils -y
           sudo apt install jq -y
           sudo apt install wget -y
-          sudo timeout 120 sh scrape.sh
+          mkdir -p cache/tmp/
       - name: Commit
         run: |
           git config --local user.name "github-actions[bot]"
