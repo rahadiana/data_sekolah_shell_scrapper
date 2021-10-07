@@ -50,5 +50,5 @@ echo "findDetail end"
 startup
 aabbcc
 FindCity
-timeout 120 FindDetail
+FindDetail
 #echo "finish"
