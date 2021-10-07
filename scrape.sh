@@ -10,7 +10,7 @@ mkdir -p data_sekolah/all/province/$bbb
 mkdir -p data_sekolah/all/city/$bbb
 mkdir -p data_sekolah/all/region/$bbb
 echo "startup end"
-clear
+
 }
 aabbcc() {
 bbb=$(cat cache/tmp/smstrnow.txt )
@@ -26,7 +26,7 @@ mkdir -p cache/tmp/data_sekolah
 ls data_sekolah/province/$bbb/ | sed "s/^/cp data_sekolah\/province\/$bbb\//; s/$/\/*.json  cache\/tmp\/data_sekolah\//"  | bash
 cat cache/tmp/data_sekolah/*.json | jq -s 'flatten' > cache/tmp/fin.json
 echo "abc ends"
-clear
+
 }
 
 FindCity(){
