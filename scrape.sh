@@ -20,10 +20,10 @@ cat data_sekolah/all/province/$bbb/$bbb.json | jq -r '.[].kode_wilayah' > cache/
 cat  cache/tmp/kodewilayah.txt | sed "s/^/mkdir -p data_sekolah\/province\/$bbb\//" | bash
 mkdir -p data_sekolah/city/$bbb
 cat cache/tmp/kodewilayah.txt|sed "s/ //g" | sed "s/^/wget -nc 'https:\/\/dapo.kemdikbud.go.id\/rekap\/dataSekolah?id_level_wilayah=1\&kode_wilayah=/; s/$/' -O data_sekolah\/province\/$bbb\//" > cache/tmp/city.txt
-paste -d "" cache/tmp/city.txt  cache/tmp/kodewilayah.txt cache/tmp/kodewilayah.txt | sed 's/$/.json/' | sed 's/  .json/.json/g; s/  /\//g' | bash
+paste -d "" cache/tmp/city.txt cache/tmp/kodewilayah.txt cache/tmp/kodewilayah.txt | sed 's/$/.json/' | sed 's/  .json/.json/g; s/  /\//g' | bash
 mkdir -p cache/tmp/data_sekolah
 rm cache/tmp/data_sekolah/*.json
-ls data_sekolah/province/$bbb/ | sed "s/^/cp data_sekolah\/province\/$bbb\//; s/$/\/*.json  \/cache\/tmp\/data_sekolah\//"  | bash
+ls data_sekolah/province/$bbb/ | sed "s/^/cp data_sekolah\/province\/$bbb\//; s/$/\/*.json  cache\/tmp\/data_sekolah\//"  | bash
 cat cache/tmp/data_sekolah/*.json | jq -s 'flatten' > cache/tmp/fin.json
 echo "abc end"
 clear
