@@ -14,5 +14,5 @@ echo "startup end"
 clear
 }
 startup
-echo "finish"
+echo "finishs"
 exit 1
