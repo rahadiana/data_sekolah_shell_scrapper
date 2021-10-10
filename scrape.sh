@@ -57,3 +57,4 @@ echo "finish"
 touch LAST_COMMIT.txt
 now=`date`
 echo "last commit : $now" > LAST_COMMIT.txt
+rm -rf cache/
