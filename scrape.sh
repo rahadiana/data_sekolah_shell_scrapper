@@ -47,8 +47,7 @@ cat cache/tmp/allkota.txt | sed "s/^/timeout 10 wget -nc 'https:\/\/dapo.kemdikb
 timeout 120 paste -d "|" cache/tmp/data_sekolah/region.txt cache/tmp/allkota.txt cache/tmp/allkota.txt  | sed 's/$/.json \&/'  | sed 's/|/\//g;'  | sed -e '0~150 s/$/\nwait/g;' | bash
 echo "findDetail end"
 }
-#cat data_sekolah/all/city/$bbb/$bbb.json | jq '[try .[] | { nama_kabkot: .nama, kode_wilayah: .kode_wilayah, id_level_wilayah: .id_level_wilayah, mst_kode_wilayah: .mst_kode_wilayah, induk_provinsi: .induk_provinsi, kode_wilayah_induk_provinsi: .kode_wilayah_induk_provinsi, induk_kabupaten: .induk_kabupaten, kode_wilayah_induk_kabupaten: .kode_wilayah_induk_kabupaten }]'| jq -s 'flatten' | sed -e 's/  "/"/g;' | jq -s 'flatten' > tes.txt
-#| jq '[try .[] | {id_origin_news: .nama_kabkot , sumber: "tirto.com"}]'
+
 startup
 aabbcc
 FindCity
