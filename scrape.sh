@@ -33,7 +33,7 @@ FindCity(){
 echo "findCity start"
 cat cache/tmp/fin.json | jq -r '.[].kode_wilayah' | sed "s/ //g; s/^/mkdir -p data_sekolah\/city\/$bbb\//" | bash
 ls data_sekolah/city/$bbb |sed "s/ //g" > cache/tmp/data_sekolah/city.txt
-cat cache/tmp/data_sekolah/city.txt | sed "s/^/timeout 10 wget -nc  'https:\/\/dapo.kemdikbud.go.id\/rekap\/dataSekolah?id_level_wilayah=2\&kode_wilayah=/; s/$/\&smester_id=$bbb' -O data_sekolah\/city\/$bbb/"  > cache/tmp/data_sekolah/city2.txt
+cat cache/tmp/data_sekolah/city.txt | sed "s/^/timeout 10 wget -nc  'https:\/\/dapo.kemdikbud.go.id\/rekap\/dataSekolah?id_level_wilayah=2\&kode_wilayah=/; s/$/\&semester_id=$bbb' -O data_sekolah\/city\/$bbb/"  > cache/tmp/data_sekolah/city2.txt
 paste -d "|" cache/tmp/data_sekolah/city2.txt cache/tmp/data_sekolah/city.txt cache/tmp/data_sekolah/city.txt | sed 's/$/.json \&/'  | sed 's/  .json/.json/g; s/|/\//g' | sed -e '0~10 s/$/\nwait/g;' | bash
 echo "findCity end"
 }
@@ -44,7 +44,7 @@ echo "findDetail start"
 find data_sekolah/city/$bbb -name '*.json' -exec cat {} \; | jq '.' > data_sekolah/all/city/$bbb/$bbb.json
 cat data_sekolah/all/city/$bbb/$bbb.json | jq -r '.[].kode_wilayah' | sed 's/ //g' > cache/tmp/allkota.txt
 cat cache/tmp/allkota.txt | sed "s/^/mkdir -p data_sekolah\/region\/$bbb\//g" | bash
-cat cache/tmp/allkota.txt | sed "s/^/timeout 10 wget -nc 'https:\/\/dapo.kemdikbud.go.id\/rekap\/progresSP?id_level_wilayah=3\&kode_wilayah=/; s/$/\&smester_id=$bbb\&bentuk_pendidikan_id=' -O data_sekolah\/region\/$bbb/" > cache/tmp/data_sekolah/region.txt
+cat cache/tmp/allkota.txt | sed "s/^/timeout 10 wget -nc 'https:\/\/dapo.kemdikbud.go.id\/rekap\/progresSP?id_level_wilayah=3\&kode_wilayah=/; s/$/\&semester_id=$bbb\&bentuk_pendidikan_id=' -O data_sekolah\/region\/$bbb/" > cache/tmp/data_sekolah/region.txt
 timeout 120 paste -d "|" cache/tmp/data_sekolah/region.txt cache/tmp/allkota.txt cache/tmp/allkota.txt  | sed 's/$/.json \&/'  | sed 's/|/\//g;'  | sed -e '0~150 s/$/\nwait/g;' | bash
 echo "findDetail end"
 }
