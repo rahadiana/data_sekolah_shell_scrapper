@@ -14,15 +14,6 @@ jobs:
             ref: ${{ github.event.pull_request.head.ref }}
       - name: scrape run
         run: |
-          rm -rf data_sekolah/region/20231
-          rm -rf data_sekolah/province/20231
-          rm -rf data_sekolah/city/20231
-          rm -rf data_sekolah/region/20231
-          
-          rm -rf data_sekolah/all/region/20231
-          rm -rf data_sekolah/all/province/20231
-          rm -rf data_sekolah/all/city/20231
-          
           sudo apt install libxml2-utils
           sudo apt install jq
           sudo sh scrape.sh
