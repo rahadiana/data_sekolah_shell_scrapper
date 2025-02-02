@@ -14,27 +14,20 @@ jobs:
             ref: ${{ github.event.pull_request.head.ref }}
       - name: scrape run
         run: |
-          # sudo apt install libxml2-utils
-          # sudo apt install jq
-          # sudo sh scrape.sh
-          echo "OK"
+          sudo apt install libxml2-utils
+          sudo apt install jq
+          sudo sh scrape.sh
       - name: Commit
         run: |
           #git config --global --add safe.directory '.'
           git config --local user.name "github-actions[bot]"
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          # git add .
-          # git commit -m "update"
-          git checkout --orphan latest_branch
-          git add -A
-          git commit -am "update"
-          git branch -D main
-          git branch -m main
-          git push -f origin main
-      # - name: GitHub Push
-      #   uses: ad-m/github-push-action@master
-      #   with:
-      #     force: true
-      #     directory: "."
-      #     github_token: ${{ secrets.GITHUB_TOKEN }}
-      #     branch: ${{ github.ref }}
+          git add .
+          git commit -m "update"
+      - name: GitHub Push
+        uses: ad-m/github-push-action@master
+        with:
+          force: true
+          directory: "."
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
